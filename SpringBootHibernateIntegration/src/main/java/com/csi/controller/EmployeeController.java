@@ -31,4 +31,8 @@ public class EmployeeController {
 		return ResponseEntity.ok(employeeServiceImpl.getAllData());
 	}
 
+	@GetMapping("/welcome")
+	public ResponseEntity<String> sayWelcome(){
+		return ResponseEntity.ok("WELCOME TO FINTECH CSI PUNE");
+	}
 }
